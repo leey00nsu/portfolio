@@ -7,3 +7,13 @@
 * {
   font-family: "Noto Sans KR", sans-serif;
 }
+
+.dot {
+  color: #fe6f0f;
+}
+
+ul > li::before {
+  content: "•";
+  color: #fe6f0f;
+  padding-right: 3px;
+}
