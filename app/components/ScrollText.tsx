@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ScrollText = () => {
   return (
-    <div className="h-[40px] lg:h-[60px] overflow-hidden">
+    <div className="h-[36px] sm:h-[40px] lg:h-[60px] overflow-hidden">
       <motion.div
         initial={{ translateY: 0 }}
         animate={{
@@ -25,9 +25,15 @@ const ScrollText = () => {
           repeatDelay: 1,
         }}
       >
-        <h1 className="text-4xl lg:text-6xl font-semibold dot ">발전하는</h1>
-        <h1 className="text-4xl lg:text-6xl font-semibold dot">구현하는</h1>
-        <h1 className="text-4xl lg:text-6xl font-semibold dot">해결하는</h1>
+        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-semibold dot ">
+          발전하는
+        </h1>
+        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-semibold dot">
+          구현하는
+        </h1>
+        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-semibold dot">
+          해결하는
+        </h1>
       </motion.div>
     </div>
   );

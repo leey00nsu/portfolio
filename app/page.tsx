@@ -8,14 +8,16 @@ import ScrollText from "./components/ScrollText";
 export default function Home() {
   return (
     <main className="flex justify-center py-20">
-      <section className="flex flex-col max-w-xl md:max-w-3xl  gap-12">
+      <section className="flex flex-col max-w-sm sm:max-w-xl md:max-w-3xl  gap-12">
         {/* 인삿말 */}
         <article>
-          <h1 className="text-4xl lg:text-6xl font-semibold">안녕하세요.</h1>
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-semibold">
+            안녕하세요.
+          </h1>
           <div className="flex gap-2">
             <ScrollText />
 
-            <h1 className="text-4xl lg:text-6xl font-semibold">
+            <h1 className="text-2xl sm:text-4xl lg:text-6xl font-semibold">
               개발자 이윤수입니다<span className="dot">.</span>
             </h1>
           </div>
@@ -28,7 +30,7 @@ export default function Home() {
           </p>
           <p className="text-base lg:text-xl font-medium">
             좋은 프론트엔드 개발자는 유저와 백엔드 개발자, 기획자, 디자이너간의
-            중간점 역할을 잘 하는 것이라고 믿습니다.
+            중간점이 되는 것이라고 믿습니다.
           </p>
           <p className="text-base lg:text-xl font-medium">
             주도적으로 문제를 해결할 수 있는 환경을 선호합니다.
