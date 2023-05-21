@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { sideProjectData } from "../data/sideProjectData";
 
 export interface SideProjectDataProps {
   imgSrc: string;
@@ -16,7 +15,7 @@ export interface SideProjectDataProps {
 const SideProject = (props: SideProjectDataProps) => {
   return (
     <div className="flex flex-col border-b border-gray-400/50 py-10 gap-4">
-      <a href={props.url} className="flex h-96 relative">
+      <a href={props.url} target="_blank" className="flex h-96 relative">
         <Image
           className=" object-cover"
           fill

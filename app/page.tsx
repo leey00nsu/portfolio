@@ -8,7 +8,7 @@ import ScrollText from "./components/ScrollText";
 export default function Home() {
   return (
     <main className="flex justify-center py-20">
-      <section className="flex flex-col max-w-xl md:max-w-3xl 3xl:max-w-6xl gap-12">
+      <section className="flex flex-col max-w-xl md:max-w-3xl  gap-12">
         {/* 인삿말 */}
         <article>
           <h1 className="text-4xl lg:text-6xl font-semibold">안녕하세요.</h1>
@@ -23,14 +23,14 @@ export default function Home() {
 
         {/* 소개 */}
         <article>
-          <p className=" text-base lg:text-2xl font-medium">
+          <p className=" text-base lg:text-xl font-medium">
             프론트엔드 개발자로서 유저를 생각하는 UI/UX 구현을 지향합니다.
           </p>
-          <p className="text-base lg:text-2xl font-medium">
+          <p className="text-base lg:text-xl font-medium">
             좋은 프론트엔드 개발자는 유저와 백엔드 개발자, 기획자, 디자이너간의
             중간점 역할을 잘 하는 것이라고 믿습니다.
           </p>
-          <p className="text-base lg:text-2xl font-medium">
+          <p className="text-base lg:text-xl font-medium">
             주도적으로 문제를 해결할 수 있는 환경을 선호합니다.
           </p>
         </article>
@@ -72,6 +72,12 @@ export default function Home() {
             <Experience key={experience.title} {...experience} />
           ))}
         </article>
+
+        <div className="flex justify-center">
+          <a href="https://github.com/leey00nsu" target="_blank">
+            <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
+          </a>
+        </div>
       </section>
     </main>
   );
