@@ -1,39 +1,44 @@
 "use client";
-import React from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+const highlightTexts = ["발전하는", "구현하는", "해결하는"];
+
 const ScrollText = () => {
+  const [texts, setTexts] = useState(highlightTexts);
+
+  const textSlideHandler = () => {
+    setTexts((prev) => {
+      const copyTexts = [...prev];
+      const firstText = copyTexts.shift()!;
+      copyTexts.push(firstText);
+
+      return copyTexts;
+    });
+  };
+
   return (
     <div className="h-[36px] sm:h-[40px] lg:h-[60px] overflow-hidden">
       <motion.div
+        key={texts[0]}
         initial={{ translateY: 0 }}
         animate={{
-          translateY: [
-            0,
-            "calc(-33%)",
-            "calc(-67%)",
-            "calc(-67%)",
-            "calc(-33%)",
-            0,
-          ],
+          translateY: "-33.3%",
         }}
+        onAnimationComplete={textSlideHandler}
         transition={{
-          times: [0, 0.2, 0.4, 0.6, 0.8, 1],
           ease: "easeInOut",
-          duration: 5,
-          repeat: Infinity,
-          repeatDelay: 1,
+          duration: 1,
         }}
       >
-        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-semibold dot ">
-          발전하는
-        </h1>
-        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-semibold dot">
-          구현하는
-        </h1>
-        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-semibold dot">
-          해결하는
-        </h1>
+        {texts.map((text) => (
+          <h1
+            key={text}
+            className="text-2xl sm:text-4xl lg:text-6xl font-semibold dot "
+          >
+            {text}
+          </h1>
+        ))}
       </motion.div>
     </div>
   );
