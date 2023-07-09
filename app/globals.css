@@ -17,3 +17,7 @@ ul > li::before {
   color: #fe6f0f;
   padding-right: 3px;
 }
+
+.external-link::before {
+  content: "🔗 ";
+}

@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "이력서",
-  description: "이윤수의 이력서 입니다.",
+  title: "포트폴리오",
+  description: "이윤수의 포트폴리오 입니다.",
 };
 
 export default function RootLayout({

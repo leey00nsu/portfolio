@@ -25,7 +25,7 @@ const ScrollText = () => {
         animate={{
           translateY: "-33.3%",
         }}
-        onAnimationComplete={textSlideHandler}
+        onAnimationComplete={() => setTimeout(textSlideHandler, 500)}
         transition={{
           ease: "easeInOut",
           duration: 1,

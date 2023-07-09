@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export interface SideProjectDataProps {
   imgSrc: string;
@@ -10,11 +11,13 @@ export interface SideProjectDataProps {
   stack: string[];
   description: string[];
   contribution: string[];
+  review?: { title: string; url: string }[];
 }
 
 const SideProject = (props: SideProjectDataProps) => {
   return (
     <div className="flex flex-col border-b border-gray-400/50 py-10 gap-4">
+      {/* 이미지 */}
       <a href={props.url} target="_blank" className="flex h-96 relative">
         <Image
           className=" object-cover"
@@ -23,6 +26,8 @@ const SideProject = (props: SideProjectDataProps) => {
           alt={props.title}
         />
       </a>
+
+      {/* 타이틀 */}
       <div>
         <h4 className="text-2xl font-medium">
           {props.title}
@@ -31,6 +36,8 @@ const SideProject = (props: SideProjectDataProps) => {
         <p className="text-md font-light">{props.role}</p>
         <p className="text-md font-light">{props.date}</p>
       </div>
+
+      {/* 상세 설명 */}
       <div className="flex flex-col gap-2">
         <div>
           <h6 className="text-lg font-medium">기술 스택</h6>
@@ -52,6 +59,25 @@ const SideProject = (props: SideProjectDataProps) => {
             ))}
           </ul>
         </div>
+
+        {/* 후기 */}
+        {props.review && (
+          <div>
+            <h6 className="text-lg font-medium">문서</h6>
+            <ul>
+              {props.review?.map((contribution) => (
+                <a
+                  target="_blank"
+                  href={contribution.url}
+                  key={contribution.title}
+                  className="text-md font-light external-link"
+                >
+                  {contribution.title}
+                </a>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );

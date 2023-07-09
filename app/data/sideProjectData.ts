@@ -5,12 +5,20 @@ export const sideProjectData = [
     title: "아트폴리오",
     role: "Frontend Developer",
     date: "2023.04 ~ (진행중)",
-    stack: ["React", "TypeScript", "Tailwind CSS", "React-Query", "Zustand"],
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "React-Query",
+      "Zustand",
+      "msw",
+    ],
     description: ["청년 예술가를 위한 예술품 큐레이팅 서비스"],
     contribution: [
-      "모바일 웹 레이아웃 구성 및 구현",
-      "React-Query를 통한 무한 스크롤 구현",
-      "Nivo Chart 라이브러리를 통한 차트 구현",
+      "React-Query를 통한 무한 스크롤",
+      "Nivo Chart 라이브러리를 통한 차트",
+      "msw를 이용한 백엔드 API 모킹",
+      "모바일 웹 레이아웃 구성",
     ],
   },
   {
@@ -21,7 +29,7 @@ export const sideProjectData = [
     date: "2023.04",
     stack: ["React", "TypeScript", "Tailwind CSS"],
     description: ["2023년 삼육대학교 동아리제 홍보 페이지"],
-    contribution: ["모바일 웹 레이아웃 구성 및 구현"],
+    contribution: ["모바일 웹 레이아웃 구성"],
   },
   {
     imgSrc: "/takingMeal.jpg",
@@ -33,9 +41,12 @@ export const sideProjectData = [
     description: [
       "저소득층 아이들을 위한 급식카드 가맹점 및 선한영향력 가게 제공 어플리케이션",
     ],
-    contribution: [
-      "영양성분 데이터 조회 및 그래프 구현",
-      "식단 검색 및 추가 기능 구현",
+    contribution: ["영양성분 데이터 조회 및 그래프", "식단 검색 및 추가 기능"],
+    review: [
+      {
+        title: "밥 한끼 하자 프로젝트 회고",
+        url: "https://leeyoonsu-blog.vercel.app/%EB%B0%A5-%ED%95%9C%EB%81%BC-%ED%95%98%EC%9E%90",
+      },
     ],
   },
 ];

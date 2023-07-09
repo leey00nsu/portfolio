@@ -8,7 +8,7 @@ import ScrollText from "./components/ScrollText";
 export default function Home() {
   return (
     <main className="flex justify-center py-20">
-      <section className="flex flex-col max-w-sm sm:max-w-xl md:max-w-3xl  gap-12">
+      <section className="flex flex-col max-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-4xl  gap-12">
         {/* 인삿말 */}
         <article>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-semibold">
@@ -40,7 +40,7 @@ export default function Home() {
         {/* 좋아하는 것 */}
         <article>
           <h2 className="text-3xl font-semibold mb-2">
-            좋아하는 것<span className="dot">.</span>
+            Like<span className="dot">.</span>
           </h2>
           <p className="text-md font-light">
             문제를 해결하는 과정을 좋아합니다.
