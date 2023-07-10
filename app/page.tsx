@@ -75,9 +75,12 @@ export default function Home() {
           ))}
         </article>
 
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center justify-center gap-2">
           <a href="https://github.com/leey00nsu" target="_blank">
             <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
+          </a>
+          <a href="https://leeyoonsu-blog.vercel.app/" target="_blank">
+            <img src="https://img.shields.io/badge/blog-%23121011.svg?style=for-the-badge&logoColor=white" />
           </a>
         </div>
       </section>
