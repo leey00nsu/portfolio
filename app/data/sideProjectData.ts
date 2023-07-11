@@ -1,3 +1,15 @@
+export interface SideProjectData {
+  imgSrc: string;
+  url: string;
+  title: string;
+  role: string;
+  date: string;
+  stack: string[];
+  description: string[];
+  contribution: string[];
+  review?: { title: string; url: string }[];
+}
+
 export const sideProjectData = [
   {
     imgSrc: "/artfolio.png",
@@ -13,7 +25,7 @@ export const sideProjectData = [
       "Zustand",
       "msw",
     ],
-    description: ["청년 예술가를 위한 예술품 큐레이팅 서비스"],
+    description: ["청년 예술가를 위한 예술품 큐레이팅 경매 서비스"],
     contribution: [
       "React-Query를 통한 무한 스크롤",
       "Nivo Chart 라이브러리를 통한 차트",

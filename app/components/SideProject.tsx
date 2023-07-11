@@ -1,26 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { SideProjectData } from "../data/sideProjectData";
 
-export interface SideProjectDataProps {
-  imgSrc: string;
-  url: string;
-  title: string;
-  role: string;
-  date: string;
-  stack: string[];
-  description: string[];
-  contribution: string[];
-  review?: { title: string; url: string }[];
-}
-
-const SideProject = (props: SideProjectDataProps) => {
+const SideProject = (props: SideProjectData) => {
   return (
     <div className="flex flex-col border-b border-gray-400/50 py-10 gap-4">
       {/* 이미지 */}
       <a href={props.url} target="_blank" className="flex h-96 relative">
         <Image
-          className=" object-cover"
+          className="object-cover"
           fill
           src={props.imgSrc}
           alt={props.title}
@@ -30,8 +18,10 @@ const SideProject = (props: SideProjectDataProps) => {
       {/* 타이틀 */}
       <div>
         <h4 className="text-2xl font-medium">
-          {props.title}
-          <span className="dot">.</span>
+          <a href={props.url} target="_blank" className="external-link">
+            {props.title}
+            <span className="dot">.</span>
+          </a>
         </h4>
         <p className="text-md font-light">{props.role}</p>
         <p className="text-md font-light">{props.date}</p>
@@ -41,7 +31,7 @@ const SideProject = (props: SideProjectDataProps) => {
       <div className="flex flex-col gap-2">
         <div>
           <h6 className="text-lg font-medium">기술 스택</h6>
-          <p className="text-md font-light">{props.stack.join(",")}</p>
+          <p className="text-md font-light">{props.stack.join(", ")}</p>
         </div>
 
         <div>

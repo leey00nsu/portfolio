@@ -4,14 +4,14 @@ export const experienceData = [
     role: "멤버,운영진",
     date: "2022 ~ 2023",
     description:
-      "멋쟁이사자처럼 삼육대에서 2022년에 멤버로 활동하며 쌓은 지식을 기반으로 현재 운영진으로 활동하고 있습니다. 프론트엔드 파트를 맡으며 세션 및 동아리 활동을 지원하고 있습니다.",
+      "멋쟁이사자처럼 삼육대에서 2022년에 멤버로 활동하였고, 쌓은 지식을 기반으로 현재 운영진으로 활동하고 있습니다. 프론트엔드 파트를 맡으며 세션 강의 및 동아리 활동을 지원하고 있습니다.",
   },
   {
     title: "GDSC",
     role: "멤버",
     date: "2022 ~ 2023",
     description:
-      "Google Developer Student Clubs 삼육대에서 멤버로 활동하고 있습니다.",
+      "Google Developer Student Clubs 삼육대에서 멤버로 활동하며 세션과 스터디에 참여하고 있습니다.",
   },
   {
     title: "삼육대학교",
