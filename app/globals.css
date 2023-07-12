@@ -21,3 +21,8 @@ ul > li::before {
 .external-link::before {
   content: "🔗 ";
 }
+
+.external-link:hover {
+  color: #076ab6;
+  @apply animate-pulse;
+}

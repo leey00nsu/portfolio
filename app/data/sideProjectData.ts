@@ -12,7 +12,7 @@ export interface SideProjectData {
 
 export const sideProjectData = [
   {
-    imgSrc: "/artfolio.png",
+    imgSrc: "/logo_Artfolio.png",
     url: "https://github.com/SW-Contest/ArtFolio-FE",
     title: "아트폴리오",
     role: "Frontend Developer",
@@ -34,11 +34,40 @@ export const sideProjectData = [
     ],
   },
   {
-    imgSrc: "/syuCharacterMaker.png",
+    imgSrc: "/logo_Iceberg.png",
+    url: "https://github.com/leey00nsu/iceberg-fe",
+    title: "Iceberg",
+    role: "Frontend Developer",
+    date: "2023.05 ~ 2023.06",
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "React-hook-form",
+    ],
+    description: ["Github 레포지토리 연동 및 프로젝트 저장 서비스"],
+    contribution: [
+      "OAuth2.0을 이용한 소셜 로그인",
+      "Github API를 이용한 레포지토리 연동",
+    ],
+    review: [
+      {
+        title: "OAuth를 사용해보며",
+        url: "https://leeyoonsu-blog.vercel.app/OAuth%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EB%A9%B0",
+      },
+      {
+        title: "react에서 form을 구현해보자",
+        url: "https://leeyoonsu-blog.vercel.app/react-hook-form",
+      },
+    ],
+  },
+  {
+    imgSrc: "/logo_syuCharacterMaker.png",
     url: "https://github.com/leey00nsu/syu-character-maker",
     title: "나만의 수야 수호 만들기",
     role: "Frontend Developer",
-    date: "2023.04",
+    date: "2023.05",
     stack: ["React", "TypeScript", "Tailwind CSS", "Recoil", "Konva"],
     description: ["나만의 수야 수호를 만들고 공유하는 웹 어플리케이션"],
     contribution: ["Konva를 이용한 그림 그리기 및 레이어 구현"],
@@ -54,7 +83,7 @@ export const sideProjectData = [
     ],
   },
   {
-    imgSrc: "/syuclubfest.png",
+    imgSrc: "/logo_syuClubFest.png",
     url: "https://github.com/leey00nsu/SYU-2023-CLUBFEST-FE",
     title: "삼육대학교 동아리제 페이지",
     role: "Frontend Developer",
@@ -64,7 +93,7 @@ export const sideProjectData = [
     contribution: ["모바일 웹 레이아웃 구성"],
   },
   {
-    imgSrc: "/takingMeal.jpg",
+    imgSrc: "/logo_TakingMeal.png",
     url: "https://github.com/TakingMeal/TakingMeal",
     title: "밥 한 끼 하자",
     role: "Frontend Developer",
