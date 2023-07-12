@@ -56,14 +56,15 @@ const SideProject = (props: SideProjectData) => {
             <h6 className="text-lg font-medium">문서</h6>
             <ul>
               {props.review?.map((contribution) => (
-                <a
-                  target="_blank"
-                  href={contribution.url}
-                  key={contribution.title}
-                  className="text-md font-light external-link"
-                >
-                  {contribution.title}
-                </a>
+                <div key={contribution.title}>
+                  <a
+                    target="_blank"
+                    href={contribution.url}
+                    className="text-md font-light external-link"
+                  >
+                    {contribution.title}
+                  </a>
+                </div>
               ))}
             </ul>
           </div>

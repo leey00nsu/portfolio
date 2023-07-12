@@ -34,6 +34,26 @@ export const sideProjectData = [
     ],
   },
   {
+    imgSrc: "/syuCharacterMaker.png",
+    url: "https://github.com/leey00nsu/syu-character-maker",
+    title: "나만의 수야 수호 만들기",
+    role: "Frontend Developer",
+    date: "2023.04",
+    stack: ["React", "TypeScript", "Tailwind CSS", "Recoil", "Konva"],
+    description: ["나만의 수야 수호를 만들고 공유하는 웹 어플리케이션"],
+    contribution: ["Konva를 이용한 그림 그리기 및 레이어 구현"],
+    review: [
+      {
+        title: "Canvas를 이용해 그림 그리기",
+        url: "https://leeyoonsu-blog.vercel.app/Canvas-%EB%8B%A4%EB%A3%A8%EA%B8%B0",
+      },
+      {
+        title: "리액트에서 CSS 변수 다루기",
+        url: "https://leeyoonsu-blog.vercel.app/CSS-%EB%B3%80%EC%88%98-%EB%8B%A4%EB%A3%A8%EA%B8%B0",
+      },
+    ],
+  },
+  {
     imgSrc: "/syuclubfest.png",
     url: "https://github.com/leey00nsu/SYU-2023-CLUBFEST-FE",
     title: "삼육대학교 동아리제 페이지",
