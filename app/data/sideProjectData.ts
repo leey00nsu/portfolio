@@ -7,7 +7,7 @@ export interface SideProjectData {
   stack: string[];
   description: string[];
   contribution: string[];
-  review?: { title: string; url: string }[];
+  docs?: { title: string; url: string }[];
 }
 
 export const sideProjectData = [
@@ -51,7 +51,7 @@ export const sideProjectData = [
       "OAuth2.0을 이용한 소셜 로그인",
       "Github API를 이용한 레포지토리 연동",
     ],
-    review: [
+    docs: [
       {
         title: "OAuth를 사용해보며",
         url: "https://leeyoonsu-blog.vercel.app/OAuth%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EB%A9%B0",
@@ -71,7 +71,7 @@ export const sideProjectData = [
     stack: ["React", "TypeScript", "Tailwind CSS", "Recoil", "Konva"],
     description: ["나만의 수야 수호를 만들고 공유하는 웹 어플리케이션"],
     contribution: ["Konva를 이용한 그림 그리기 및 레이어 구현"],
-    review: [
+    docs: [
       {
         title: "Canvas를 이용해 그림 그리기",
         url: "https://leeyoonsu-blog.vercel.app/Canvas-%EB%8B%A4%EB%A3%A8%EA%B8%B0",
@@ -103,7 +103,7 @@ export const sideProjectData = [
       "저소득층 아이들을 위한 급식카드 가맹점 및 선한영향력 가게 제공 어플리케이션",
     ],
     contribution: ["영양성분 데이터 조회 및 그래프", "식단 검색 및 추가 기능"],
-    review: [
+    docs: [
       {
         title: "밥 한끼 하자 프로젝트 회고",
         url: "https://leeyoonsu-blog.vercel.app/%EB%B0%A5-%ED%95%9C%EB%81%BC-%ED%95%98%EC%9E%90",
