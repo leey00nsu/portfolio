@@ -1,10 +1,25 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "포트폴리오",
+  title: "이윤수의 포트폴리오",
   description: "이윤수의 포트폴리오 입니다.",
   icons: {
     icon: "/icon.ico",
+  },
+  openGraph: {
+    title: "이윤수의 포트폴리오",
+    description: "이윤수의 포트폴리오 입니다.",
+    url: "https://leeyoonsu-portfolio.vercel.app/",
+    siteName: "이윤수의 포트폴리오",
+    images: [
+      {
+        url: "/og.png",
+        width: 1600,
+        height: 400,
+      },
+    ],
+    locale: "ko_KR",
+    type: "website",
   },
 };
 
