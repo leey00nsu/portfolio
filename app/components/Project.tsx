@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { SideProjectData } from "../data/sideProjectData";
+import { ProjectData } from "../data/ProjectData";
 
-const SideProject = (props: SideProjectData) => {
+const Project = (props: ProjectData) => {
   return (
     <div className="flex flex-col border-b border-gray-400/50 py-10 gap-4">
       {/* 이미지 */}
@@ -74,4 +74,4 @@ const SideProject = (props: SideProjectData) => {
   );
 };
 
-export default SideProject;
+export default Project;

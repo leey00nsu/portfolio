@@ -1,6 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const highlightTexts = ["발전하는", "구현하는", "해결하는"];
 

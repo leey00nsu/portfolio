@@ -1,6 +1,6 @@
 import Image from "next/image";
-import SideProject from "./components/SideProject";
-import { sideProjectData } from "./data/sideProjectData";
+import Project from "./components/Project";
+import { ProjectData } from "./data/ProjectData";
 import Experience from "./components/Experience";
 import { experienceData } from "./data/experienceData";
 import ScrollText from "./components/ScrollText";
@@ -53,14 +53,14 @@ export default function Home() {
           </p>
         </article>
 
-        {/* 사이드 프로젝트 */}
+        {/* 프로젝트 */}
         <article>
           <h2 className="text-3xl font-semibold">
-            Side Project<span className="dot">.</span>
+            Project<span className="dot">.</span>
           </h2>
 
-          {sideProjectData.map((project) => (
-            <SideProject key={project.title} {...project} />
+          {ProjectData.map((project) => (
+            <Project key={project.title} {...project} />
           ))}
         </article>
 
@@ -75,11 +75,11 @@ export default function Home() {
           ))}
         </article>
 
-        <div className="flex flex-col items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2">
           <a href="https://github.com/leey00nsu" target="_blank">
             <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
           </a>
-          <a href="https://leeyoonsu-blog.vercel.app/" target="_blank">
+          <a href="https://blog.leey00nsu.site/" target="_blank">
             <img src="https://img.shields.io/badge/blog-%23121011.svg?style=for-the-badge&logoColor=white" />
           </a>
         </div>

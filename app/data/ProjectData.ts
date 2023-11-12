@@ -1,4 +1,4 @@
-export interface SideProjectData {
+export interface ProjectData {
   imgSrc: string;
   url: string;
   title: string;
@@ -10,27 +10,50 @@ export interface SideProjectData {
   docs?: { title: string; url: string }[];
 }
 
-export const sideProjectData = [
+export const ProjectData = [
   {
     imgSrc: "/logo_Artfolio.png",
-    url: "https://github.com/SW-Contest/ArtFolio-FE",
+    url: "https://github.com/leey00nsu/ArtFolio-FE",
     title: "아트폴리오",
     role: "Frontend Developer",
-    date: "2023.04 ~ (진행중)",
+    date: "2023.04 ~ 2023.09",
     stack: [
       "React",
       "TypeScript",
       "Tailwind CSS",
       "React-Query",
       "Zustand",
+      "Framer-motion",
       "msw",
     ],
-    description: ["청년 예술가를 위한 예술품 큐레이팅 경매 서비스"],
+    description: ["AI 기반 예술품 경매 서비스"],
     contribution: [
-      "React-Query를 통한 무한 스크롤",
-      "Nivo Chart 라이브러리를 통한 차트",
+      "React-Query를 통한 실시간 경매",
+      "Nivo Chart를 통한 실시간 차트",
       "msw를 이용한 백엔드 API 모킹",
-      "모바일 웹 레이아웃 구성",
+      "Framer-motion을 이용한 웹뷰식 슬라이드 애니메이션",
+    ],
+    docs: [
+      {
+        title: "react-query 왜 사용할까?",
+        url: "https://blog.leey00nsu.site/blog/react-query-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C",
+      },
+      {
+        title: "nivo chart 사용기",
+        url: "https://blog.leey00nsu.site/blog/nivo-chart-%EC%82%AC%EC%9A%A9%EA%B8%B0",
+      },
+      {
+        title: "msw로 모킹하기",
+        url: "https://blog.leey00nsu.site/blog/msw%EB%A1%9C-%EB%AA%A8%ED%82%B9%ED%95%98%EA%B8%B0",
+      },
+      {
+        title: "framer-motion으로 슬라이드 애니메이션 구현하기",
+        url: "https://blog.leey00nsu.site/blog/framer-motion-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0",
+      },
+      {
+        title: "무한스크롤 구현해보기",
+        url: "https://blog.leey00nsu.site/blog/%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%9D%98-%EA%B5%AC%ED%98%84",
+      },
     ],
   },
   {
@@ -54,11 +77,11 @@ export const sideProjectData = [
     docs: [
       {
         title: "OAuth를 사용해보며",
-        url: "https://leeyoonsu-blog.vercel.app/OAuth%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EB%A9%B0",
+        url: "https://blog.leey00nsu.site/blog/OAuth%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EB%A9%B0",
       },
       {
         title: "react에서 form을 구현해보자",
-        url: "https://leeyoonsu-blog.vercel.app/react-hook-form",
+        url: "https://blog.leey00nsu.site/blog/react-hook-form",
       },
     ],
   },
@@ -74,11 +97,11 @@ export const sideProjectData = [
     docs: [
       {
         title: "Canvas를 이용해 그림 그리기",
-        url: "https://leeyoonsu-blog.vercel.app/Canvas-%EB%8B%A4%EB%A3%A8%EA%B8%B0",
+        url: "https://blog.leey00nsu.site/blog/Canvas-%EB%8B%A4%EB%A3%A8%EA%B8%B0",
       },
       {
         title: "리액트에서 CSS 변수 다루기",
-        url: "https://leeyoonsu-blog.vercel.app/CSS-%EB%B3%80%EC%88%98-%EB%8B%A4%EB%A3%A8%EA%B8%B0",
+        url: "https://blog.leey00nsu.site/blog/CSS-%EB%B3%80%EC%88%98-%EB%8B%A4%EB%A3%A8%EA%B8%B0",
       },
     ],
   },
@@ -106,7 +129,7 @@ export const sideProjectData = [
     docs: [
       {
         title: "밥 한끼 하자 프로젝트 회고",
-        url: "https://leeyoonsu-blog.vercel.app/%EB%B0%A5-%ED%95%9C%EB%81%BC-%ED%95%98%EC%9E%90",
+        url: "https://blog.leey00nsu.site/article/%EB%B0%A5-%ED%95%9C%EB%81%BC-%ED%95%98%EC%9E%90-%ED%9A%8C%EA%B3%A0",
       },
     ],
   },
