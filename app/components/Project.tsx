@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ProjectData } from "../data/ProjectData";
+import Dot from "./Dot";
 
 const Project = (props: ProjectData) => {
   return (
@@ -20,7 +21,7 @@ const Project = (props: ProjectData) => {
         <h4 className="text-2xl font-medium">
           <a href={props.url} target="_blank" className="external-link">
             {props.title}
-            <span className="dot">.</span>
+            <Dot />
           </a>
         </h4>
         <p className="text-md font-light">{props.role}</p>
@@ -50,7 +51,7 @@ const Project = (props: ProjectData) => {
           </ul>
         </div>
 
-        {/* 후기 */}
+        {/* 문서 */}
         {props.docs && (
           <div>
             <h6 className="text-lg font-medium">문서</h6>

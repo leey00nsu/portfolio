@@ -1,4 +1,5 @@
 import React from "react";
+import Dot from "./Dot";
 import { ExperienceData } from "../data/experienceData";
 
 const Experience = (props: ExperienceData) => {
@@ -7,7 +8,7 @@ const Experience = (props: ExperienceData) => {
       <div>
         <h4 className="text-2xl font-medium">
           {props.title}
-          <span className="dot">.</span>
+          <Dot />
         </h4>
       </div>
       <div>

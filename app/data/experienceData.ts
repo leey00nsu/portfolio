@@ -12,11 +12,15 @@ export const experienceData = [
     role: "멤버,운영진",
     date: "2022 ~ 2023",
     description:
-      "멋쟁이사자처럼 삼육대에서 2022년에 멤버로 활동하였고, 쌓은 지식을 기반으로 현재 운영진으로 활동하고 있습니다. 프론트엔드 파트를 맡으며 세션 강의 및 동아리 활동을 지원하고 있습니다.",
+      "멋쟁이사자처럼 삼육대에서 2022년에 멤버로 활동하였고, 쌓은 지식을 기반으로 운영진으로 활동하였습니다. 프론트엔드 파트를 맡으며 세션 강의 및 동아리 활동을 지원하고 있습니다.",
     docs: [
       {
-        title: "동영상 세션 강의",
+        title: "react 세션 - TODO 리스트 만들기",
         url: "https://www.youtube.com/watch?v=1c94yAUNE5Q&feature=youtu.be&ab_channel=%EC%9D%B4%EC%9C%A4%EC%88%98",
+      },
+      {
+        title: "react 세션 - MBTI 테스트 만들기",
+        url: "https://www.youtube.com/watch?si=6XvzWzSVobQ8c2de&v=QnetBbp3Ndk&feature=youtu.be",
       },
     ],
   },

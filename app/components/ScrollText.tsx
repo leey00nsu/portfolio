@@ -32,10 +32,7 @@ const ScrollText = () => {
         }}
       >
         {texts.map((text) => (
-          <h1
-            key={text}
-            className="text-2xl sm:text-4xl lg:text-6xl font-semibold dot "
-          >
+          <h1 key={text} className="text-highlight-blue ">
             {text}
           </h1>
         ))}

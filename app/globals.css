@@ -6,15 +6,12 @@
 
 * {
   font-family: "Noto Sans KR", sans-serif;
-}
-
-.dot {
-  color: #076ab6;
+  --highlite-blue: #076ab6;
 }
 
 ul > li::before {
   content: "•";
-  color: #076ab6;
+  color: var(--highlite-blue);
   padding-right: 3px;
 }
 
@@ -23,6 +20,6 @@ ul > li::before {
 }
 
 .external-link:hover {
-  color: #076ab6;
+  color: var(--highlite-blue);
   @apply animate-pulse;
 }

@@ -12,7 +12,7 @@ export interface ProjectData {
 
 export const ProjectData = [
   {
-    imgSrc: "/logo_Artfolio.png",
+    imgSrc: "/project/artfolio.png",
     url: "https://github.com/leey00nsu/ArtFolio-FE",
     title: "아트폴리오",
     role: "Frontend Developer",
@@ -57,7 +57,7 @@ export const ProjectData = [
     ],
   },
   {
-    imgSrc: "/logo_Iceberg.png",
+    imgSrc: "/project/iceberg.png",
     url: "https://github.com/leey00nsu/iceberg-fe",
     title: "Iceberg",
     role: "Frontend Developer",
@@ -86,7 +86,7 @@ export const ProjectData = [
     ],
   },
   {
-    imgSrc: "/logo_syuCharacterMaker.png",
+    imgSrc: "/project/syuCharacterMaker.png",
     url: "https://github.com/leey00nsu/syu-character-maker",
     title: "나만의 수야 수호 만들기",
     role: "Frontend Developer",
@@ -106,7 +106,7 @@ export const ProjectData = [
     ],
   },
   {
-    imgSrc: "/logo_syuClubFest.png",
+    imgSrc: "/project/syuClubFest.png",
     url: "https://github.com/leey00nsu/SYU-2023-CLUBFEST-FE",
     title: "삼육대학교 동아리제 페이지",
     role: "Frontend Developer",
@@ -116,7 +116,7 @@ export const ProjectData = [
     contribution: ["모바일 웹 레이아웃 구성"],
   },
   {
-    imgSrc: "/logo_TakingMeal.png",
+    imgSrc: "/project/takingMeal.png",
     url: "https://github.com/TakingMeal/TakingMeal",
     title: "밥 한 끼 하자",
     role: "Frontend Developer",
