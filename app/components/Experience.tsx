@@ -1,38 +1,42 @@
 import React from "react";
 import Dot from "./Dot";
 import { ExperienceData } from "../data/experienceData";
+import Paragraph from "./common/Paragraph";
+import Heading3 from "./common/Heading3";
+import Heading4 from "./common/Heading4";
+import A from "./common/A";
 
 const Experience = (props: ExperienceData) => {
   return (
     <div className="flex flex-col border-b border-gray-400/50 py-10 gap-2">
       <div>
-        <h4 className="text-2xl font-medium">
+        <Heading3>
           {props.title}
           <Dot />
-        </h4>
+        </Heading3>
       </div>
       <div>
-        <p className="text-md font-light">{props.role}</p>
-        <p className="text-md font-light">{props.date}</p>
+        <Paragraph size="sm" weight="light">
+          {props.role}
+        </Paragraph>
+        <Paragraph size="sm" weight="light">
+          {props.date}
+        </Paragraph>
       </div>
       <div className="flex flex-col ">
-        <p className="text-md font-light">{props.description}</p>
+        <Paragraph size="sm" weight="light">
+          {props.description}
+        </Paragraph>
       </div>
       {/* 후기 */}
       {props.docs && (
         <div>
-          <h6 className="text-lg font-medium">문서</h6>
+          <Heading4>문서</Heading4>
           <ul>
             {props.docs.map((doc) => (
-              <div key={doc.title}>
-                <a
-                  target="_blank"
-                  href={doc.url}
-                  className="text-md font-light external-link"
-                >
-                  {doc.title}
-                </a>
-              </div>
+              <Paragraph key={doc.title} size="sm" weight="light">
+                <A href={doc.url}>{doc.title}</A>
+              </Paragraph>
             ))}
           </ul>
         </div>

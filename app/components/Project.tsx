@@ -2,50 +2,64 @@ import React from "react";
 import Image from "next/image";
 import { ProjectData } from "../data/ProjectData";
 import Dot from "./Dot";
+import Paragraph from "./common/Paragraph";
+import Heading3 from "./common/Heading3";
+import Heading4 from "./common/Heading4";
+import A from "./common/A";
 
 const Project = (props: ProjectData) => {
   return (
     <div className="flex flex-col border-b border-gray-400/50 py-10 gap-4">
       {/* 이미지 */}
-      <a href={props.url} target="_blank" className="flex h-96 relative">
+      <A href={props.url} className="flex h-96 relative">
         <Image
           className="object-cover"
           fill
           src={props.imgSrc}
           alt={props.title}
         />
-      </a>
+      </A>
 
       {/* 타이틀 */}
       <div>
-        <h4 className="text-2xl font-medium">
-          <a href={props.url} target="_blank" className="external-link">
+        <Heading3>
+          <A href={props.url}>
             {props.title}
             <Dot />
-          </a>
-        </h4>
-        <p className="text-md font-light">{props.role}</p>
-        <p className="text-md font-light">{props.date}</p>
+          </A>
+        </Heading3>
+        <Paragraph size="sm" weight="light">
+          {props.role}
+        </Paragraph>
+        <Paragraph size="sm" weight="light">
+          {props.date}
+        </Paragraph>
       </div>
 
       {/* 상세 설명 */}
       <div className="flex flex-col gap-2">
         <div>
-          <h6 className="text-lg font-medium">기술 스택</h6>
-          <p className="text-md font-light">{props.stack.join(", ")}</p>
+          <Heading4>기술 스택</Heading4>
+          <Paragraph size="sm" weight="light">
+            {props.stack.join(", ")}
+          </Paragraph>
         </div>
 
         <div>
-          <h6 className="text-lg font-medium">프로젝트 설명</h6>
-          <p className="text-md font-light">{props.description}</p>
+          <Heading4>프로젝트 설명</Heading4>
+          <Paragraph size="sm" weight="light">
+            {props.description}
+          </Paragraph>
         </div>
 
         <div>
-          <h6 className="text-lg font-medium">프로젝트 기여</h6>
+          <Heading4>프로젝트 기여</Heading4>
           <ul>
             {props.contribution.map((contribution) => (
-              <li key={contribution} className="text-md font-light">
-                {contribution}
+              <li key={contribution}>
+                <Paragraph size="sm" weight="light">
+                  {contribution}
+                </Paragraph>
               </li>
             ))}
           </ul>
@@ -54,18 +68,12 @@ const Project = (props: ProjectData) => {
         {/* 문서 */}
         {props.docs && (
           <div>
-            <h6 className="text-lg font-medium">문서</h6>
+            <Heading4>문서</Heading4>
             <ul>
               {props.docs.map((doc) => (
-                <div key={doc.title}>
-                  <a
-                    target="_blank"
-                    href={doc.url}
-                    className="text-md font-light external-link"
-                  >
-                    {doc.title}
-                  </a>
-                </div>
+                <Paragraph key={doc.title} size="sm" weight="light">
+                  <A href={doc.url}>{doc.title}</A>
+                </Paragraph>
               ))}
             </ul>
           </div>

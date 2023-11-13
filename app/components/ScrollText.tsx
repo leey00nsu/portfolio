@@ -1,8 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Heading1 from "./common/Heading1";
 
-const highlightTexts = ["발전하는", "구현하는", "해결하는"];
+const highlightTexts = ["해결하는", "구현하는", "발전하는"];
 
 const ScrollText = () => {
   const [texts, setTexts] = useState(highlightTexts);
@@ -18,7 +19,7 @@ const ScrollText = () => {
   };
 
   return (
-    <div className="h-[36px] sm:h-[40px] lg:h-[60px] overflow-hidden">
+    <Heading1 className="h-[32px] sm:h-[40px] lg:h-[60px] overflow-hidden">
       <motion.div
         key={texts[0]}
         initial={{ translateY: 0 }}
@@ -32,12 +33,12 @@ const ScrollText = () => {
         }}
       >
         {texts.map((text) => (
-          <h1 key={text} className="text-highlight-blue ">
+          <Heading1 key={text} className="text-highlight-blue">
             {text}
-          </h1>
+          </Heading1>
         ))}
       </motion.div>
-    </div>
+    </Heading1>
   );
 };
 

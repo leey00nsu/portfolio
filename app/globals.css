@@ -9,7 +9,7 @@
   --highlite-blue: #076ab6;
 }
 
-ul > li::before {
+ul > li > p::before {
   content: "•";
   color: var(--highlite-blue);
   padding-right: 3px;
